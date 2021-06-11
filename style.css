@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Roboto Slab", serif;
+    background: rgb(223, 249, 251);
+}
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-area {
+    width: 480px;
+    box-shadow: rgb(202, 202, 202) 0px 0px 14px 2px;
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+@media only screen and (max-width: 576px) {
+	.form-area {
+		width: 90%;
+	}
+}
+.form-area h1 {
+    text-align: center;
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group {
+    width: 100%;
+    height: 60px;
+}
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+    border:1px solid red;
+    padding: 5px;
+}
+input:valid {
+	border:1px solid green;
+}
+input:invalid {
+	border:1px solid red;
+}
+button {
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(34, 166, 179);
+    padding: 12px 10px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover {
+	outline: none;
+}
+
